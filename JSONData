@@ -1,0 +1,235 @@
+let testTempData: Data = """
+    {
+        "type": "Feature",
+        "properties": {
+            "mag": 0.34,
+            "place": "5km NW of The Geysers, CA",
+            "time": 1636129710550,
+            "updated": 1636130835076,
+            "tz": null,
+            "url": "https://earthquake.usgs.gov/earthquakes/eventpage/nc73649170",
+            "felt": null,
+            "cdi": null,
+            "mmi": null,
+            "alert": null,
+            "status": "automatic",
+            "tsunami": 0,
+            "sig": 2,
+            "net": "nc",
+            "code": "73649170",
+            "ids": ",nc73649170,",
+            "sources": ",nc,",
+            "types": ",nearby-cities,origin,phase-data,scitech-link,",
+            "nst": 11,
+            "dmin": 0.001816,
+            "rms": 0.03,
+            "gap": 62,
+            "magType": "md",
+            "type": "earthquake",
+            "title": "M 0.3 - 5km NW of The Geysers, CA",
+            "products": {
+                "nearby-cities": [
+                    {
+                        "indexid": "19986796",
+                        "indexTime": 1636129811408,
+                        "id": "urn:usgs-product:nc:nearby-cities:nc73649170:1636129809904",
+                        "type": "nearby-cities",
+                        "code": "nc73649170",
+                        "source": "nc",
+                        "updateTime": 1636129809904,
+                        "status": "UPDATE",
+                        "properties": {
+                            "eventsource": "nc",
+                            "eventsourcecode": "73649170",
+                            "original-signature": "MCwCFFaEs/BGQ24uEwTdWZnCRSrnXy3bAhQZSIWuYgvw0Li4OD4MWa6XK85W5g==",
+                            "original-signature-version": "v1",
+                            "pdl-client-version": "Version 2.3.1 2020-04-13"
+                        },
+                        "preferredWeight": 7,
+                        "contents": {
+                            "nearby-cities.json": {
+                                "contentType": "application/json",
+                                "lastModified": 1636129809000,
+                                "length": 647,
+                                "url": "https://earthquake.usgs.gov/product/nearby-cities/nc73649170/nc/1636129809904/nearby-cities.json",
+                                "sha256": "TRTW3Gmgw0K3+PBtlrE06MDI6hTi+DeXO5TN9A52dmw="
+                            }
+                        }
+                    }
+                ],
+                "origin": [
+                    {
+                        "indexid": "19986793",
+                        "indexTime": 1636129809627,
+                        "id": "urn:usgs-product:nc:origin:nc73649170:1636129807120",
+                        "type": "origin",
+                        "code": "nc73649170",
+                        "source": "nc",
+                        "updateTime": 1636129807120,
+                        "status": "UPDATE",
+                        "properties": {
+                            "azimuthal-gap": "62",
+                            "depth": "4.65",
+                            "depth-type": "from location",
+                            "error-ellipse-azimuth": "105",
+                            "error-ellipse-intermediate": "1104",
+                            "error-ellipse-major": "1800",
+                            "error-ellipse-minor": "864",
+                            "error-ellipse-plunge": "63",
+                            "error-ellipse-rotation": "295",
+                            "evaluation-status": "preliminary",
+                            "event-type": "earthquake",
+                            "eventParametersPublicID": "quakeml:nc.anss.org/Event/NC/73649170#163612980712",
+                            "eventsource": "nc",
+                            "eventsourcecode": "73649170",
+                            "eventtime": "2021-11-05T16:28:30.550Z",
+                            "horizontal-error": "0.46",
+                            "latitude": "38.8093338",
+                            "longitude": "-122.7968369",
+                            "magnitude": "0.34",
+                            "magnitude-num-stations-used": "1",
+                            "magnitude-source": "NC",
+                            "magnitude-type": "md",
+                            "minimum-distance": "0.001816",
+                            "num-phases-used": "11",
+                            "num-stations-used": "11",
+                            "origin-source": "NC",
+                            "original-signature": "MCwCFGJ/S43OSSKhml2KPTOxDy7/EE9OAhR/m0UzH6kB+mIM18jMX9+6ZvuumQ==",
+                            "original-signature-version": "v1",
+                            "pdl-client-version": "Version 2.3.1 2020-04-13",
+                            "quakeml-magnitude-publicid": "quakeml:nc.anss.org/Netmag/NC/1819335",
+                            "quakeml-origin-publicid": "quakeml:nc.anss.org/Origin/NC/3207055",
+                            "quakeml-publicid": "quakeml:nc.anss.org/Event/NC/73649170",
+                            "review-status": "automatic",
+                            "standard-error": "0.03",
+                            "title": "5km NW of The Geysers, CA",
+                            "version": "0",
+                            "vertical-error": "0.68"
+                        },
+                        "preferredWeight": 157,
+                        "contents": {
+                            "contents.xml": {
+                                "contentType": "application/xml",
+                                "lastModified": 1636129807000,
+                                "length": 195,
+                                "url": "https://earthquake.usgs.gov/product/origin/nc73649170/nc/1636129807120/contents.xml",
+                                "sha256": "ABhLiaqdYWmIak24eD/csBAWouBShhatD9bUzLNEZFk="
+                            },
+                            "quakeml.xml": {
+                                "contentType": "application/xml",
+                                "lastModified": 1636129807000,
+                                "length": 3037,
+                                "url": "https://earthquake.usgs.gov/product/origin/nc73649170/nc/1636129807120/quakeml.xml",
+                                "sha256": "Jx0Eu4i2FwAVplgKdu56MczHiIzlnwVfyaRok79rxxo="
+                            }
+                        }
+                    }
+                ],
+                "phase-data": [
+                    {
+                        "indexid": "19986794",
+                        "indexTime": 1636129810702,
+                        "id": "urn:usgs-product:nc:phase-data:nc73649170:1636129807120",
+                        "type": "phase-data",
+                        "code": "nc73649170",
+                        "source": "nc",
+                        "updateTime": 1636129807120,
+                        "status": "UPDATE",
+                        "properties": {
+                            "azimuthal-gap": "62",
+                            "depth": "4.65",
+                            "depth-type": "from location",
+                            "error-ellipse-azimuth": "105",
+                            "error-ellipse-intermediate": "1104",
+                            "error-ellipse-major": "1800",
+                            "error-ellipse-minor": "864",
+                            "error-ellipse-plunge": "63",
+                            "error-ellipse-rotation": "295",
+                            "evaluation-status": "preliminary",
+                            "event-type": "earthquake",
+                            "eventParametersPublicID": "quakeml:nc.anss.org/Event/NC/73649170#163612980712",
+                            "eventsource": "nc",
+                            "eventsourcecode": "73649170",
+                            "eventtime": "2021-11-05T16:28:30.550Z",
+                            "horizontal-error": "0.46",
+                            "latitude": "38.8093338",
+                            "longitude": "-122.7968369",
+                            "magnitude": "0.34",
+                            "magnitude-num-stations-used": "1",
+                            "magnitude-source": "NC",
+                            "magnitude-type": "md",
+                            "minimum-distance": "0.001816",
+                            "num-phases-used": "11",
+                            "num-stations-used": "11",
+                            "origin-source": "NC",
+                            "original-signature": "MCwCFEaxmQ0nCKnbDeqc1oHjgmp3sRmHAhQ+C8Sk5Igj9U95u+0eH1Lb8lL8pQ==",
+                            "original-signature-version": "v1",
+                            "pdl-client-version": "Version 2.3.1 2020-04-13",
+                            "quakeml-magnitude-publicid": "quakeml:nc.anss.org/Netmag/NC/1819335",
+                            "quakeml-origin-publicid": "quakeml:nc.anss.org/Origin/NC/3207055",
+                            "quakeml-publicid": "quakeml:nc.anss.org/Event/NC/73649170",
+                            "review-status": "automatic",
+                            "standard-error": "0.03",
+                            "title": "5km NW of The Geysers, CA",
+                            "version": "0",
+                            "vertical-error": "0.68"
+                        },
+                        "preferredWeight": 157,
+                        "contents": {
+                            "contents.xml": {
+                                "contentType": "application/xml",
+                                "lastModified": 1636129807000,
+                                "length": 195,
+                                "url": "https://earthquake.usgs.gov/product/phase-data/nc73649170/nc/1636129807120/contents.xml",
+                                "sha256": "ABhLiaqdYWmIak24eD/csBAWouBShhatD9bUzLNEZFk="
+                            },
+                            "quakeml.xml": {
+                                "contentType": "application/xml",
+                                "lastModified": 1636129807000,
+                                "length": 28614,
+                                "url": "https://earthquake.usgs.gov/product/phase-data/nc73649170/nc/1636129807120/quakeml.xml",
+                                "sha256": "ai0sT3vpntkgXgU3BJskD//LluXERfCvD45t5jzABo0="
+                            }
+                        }
+                    }
+                ],
+                "scitech-link": [
+                    {
+                        "indexid": "19986869",
+                        "indexTime": 1636130836219,
+                        "id": "urn:usgs-product:nc:scitech-link:nc73649170-waveform_nc:1636130835076",
+                        "type": "scitech-link",
+                        "code": "nc73649170-waveform_nc",
+                        "source": "nc",
+                        "updateTime": 1636130835076,
+                        "status": "UPDATE",
+                        "properties": {
+                            "addon-code": "Waveform_nc",
+                            "addon-type": "LinkURL",
+                            "eventsource": "nc",
+                            "eventsourcecode": "73649170",
+                            "original-signature": "MCwCFBqOYFQ5/qIA/dvxGIsvBrm4pkTTAhRqyEAJDxW9i4x6jojZaj6Lg1chPg==",
+                            "original-signature-version": "v1",
+                            "pdl-client-version": "Version 2.3.1 2020-04-13",
+                            "text": "Waveforms",
+                            "url": "http://escweb.wr.usgs.gov/waveforms/wavesall/nc73649170/",
+                            "version": "01"
+                        },
+                        "preferredWeight": 7,
+                        "contents": []
+                    }
+                ]
+            }
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -122.7968369,
+                38.8093338,
+                4.65
+            ]
+        },
+        "id": "nc73649170"
+    }
+""".data(using: .utf8)!
+
